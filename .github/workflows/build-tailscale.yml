@@ -129,7 +129,7 @@ jobs:
     strategy:
       matrix:
         sdk:
-          - 24.10.4
+          - 24.10.5
         platform:
           - 'aarch64_cortex-a53'
           - 'aarch64_cortex-a72'
