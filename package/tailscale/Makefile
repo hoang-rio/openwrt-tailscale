@@ -11,7 +11,7 @@ include $(TOPDIR)/rules.mk
 PKG_NAME:=tailscale
 PKG_VERSION:=1.92.5
 PKG_RELEASE:=1
-PKG_COMMIT:=b1eb1a05c38c7ea682ddbfcdbd2112304f880d9e
+PKG_COMMIT:=1c215f6e5acba0b11f9c62a999aac23ecb76f3a8
 
 PKG_STRIP:=0
 
