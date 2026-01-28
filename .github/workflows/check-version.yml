@@ -18,9 +18,9 @@ on:
         required: true
 
 env:
-  REPO_SMALL: "GuNanOvO/openwrt-tailscale"
+  REPO_SMALL: "hoang-rio/openwrt-tailscale"
   REPO_SMALL_NAME: "openwrt-tailscale"
-  REPO_SMALL_OWNER: "GuNanOvO"
+  REPO_SMALL_OWNER: "hoang-rio"
 
 jobs:
   version-check:
