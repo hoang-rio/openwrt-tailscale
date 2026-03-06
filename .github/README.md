@@ -4,16 +4,16 @@
 
 # 适用于 OpenWrt 设备的 最新的、更小的 Tailscale 
 
-![GitHub release](https://img.shields.io/github/v/release/GuNanOvO/openwrt-tailscale?style=flat)
-![Views](https://api.visitorbadge.io/api/combined?path=https%3A%2F%2Fgithub.com%2FGuNanOvO%2Fopenwrt-tailscale&label=Views&countColor=%23b7d079&style=flat)
-![Downloads](https://img.shields.io/github/downloads/GuNanOvO/openwrt-tailscale/total?style=flat)
-![GitHub Stars](https://img.shields.io/github/stars/GuNanOvO/openwrt-tailscale?label=Stars&color=yellow)
+![GitHub release](https://img.shields.io/github/v/release/hoang-rio/openwrt-tailscale?style=flat)
+![Views](https://api.visitorbadge.io/api/combined?path=https%3A%2F%2Fgithub.com%2Fhoang-rio%2Fopenwrt-tailscale&label=Views&countColor=%23b7d079&style=flat)
+![Downloads](https://img.shields.io/github/downloads/hoang-rio/openwrt-tailscale/total?style=flat)
+![GitHub Stars](https://img.shields.io/github/stars/hoang-rio/openwrt-tailscale?label=Stars&color=yellow)
 
 ### 本仓库提供以下内容：
 
 * 适用于多种架构的、最新的、更小的 **Tailscale.ipk** 软件包
 * 一键安装脚本，支持 **持久化安装**、**临时安装** Tailscale
-* **OPKG 软件源**，更简单、更加方便持续更新 ➡️ [ [Smaller Tailscale Repo](https://gunanovo.github.io/openwrt-tailscale/) ]
+* **OPKG 软件源**，更简单、更加方便持续更新 ➡️ [ [Smaller Tailscale Repo](https://hoang-rio.github.io/openwrt-tailscale/) ]
 
 ---
 
@@ -86,7 +86,7 @@
 SSH链接至OpenWrt设备执行：
 
 ```bash
-wget -O /usr/sbin/install.sh https://ghfast.top/https://raw.githubusercontent.com/GuNanOvO/openwrt-tailscale/main/install.sh && chmod +x /usr/sbin/install.sh && /usr/sbin/install.sh
+wget -O /usr/sbin/install.sh https://ghfast.top/https://raw.githubusercontent.com/hoang-rio/openwrt-tailscale/main/install.sh && chmod +x /usr/sbin/install.sh && /usr/sbin/install.sh
 ```
 
 For Mainland China users only. 
@@ -97,17 +97,17 @@ For other regions, please refer to [English README](README_en.md)
 使用参数`--custom-proxy`：
 
 ```bash
-wget -O /usr/bin/install.sh https://ghfast.top/https://raw.githubusercontent.com/GuNanOvO/openwrt-tailscale/main/install.sh && chmod +x /usr/bin/install.sh && /usr/bin/install.sh --custom-proxy
+wget -O /usr/bin/install.sh https://ghfast.top/https://raw.githubusercontent.com/hoang-rio/openwrt-tailscale/main/install.sh && chmod +x /usr/bin/install.sh && /usr/bin/install.sh --custom-proxy
 ```
 
 #### **添加opkg软件源：**
 
-详见本项目分支 [软件源分支](../feed/README.md) 或本项目opkg软件源页面 [Smaller Tailscale Repository For OpenWrt](https://gunanovo.github.io/openwrt-tailscale/)
+详见本项目分支 [软件源分支](../feed/README.md) 或本项目opkg软件源页面 [Smaller Tailscale Repository For OpenWrt](https://hoang-rio.github.io/openwrt-tailscale/)
 
 仅包含受支持的架构的ipk包
 
 #### **自行安装ipk软件包：**
-1. 于本仓库[Releases](https://github.com/GuNanOvO/openwrt-tailscale/releases)下载与您设备对应架构的ipk软件包；
+1. 于本仓库[Releases](https://github.com/hoang-rio/openwrt-tailscale/releases)下载与您设备对应架构的ipk软件包；
 2. 可以于OpenWrt设备后台网页界面 -> 系统 -> 软件包
    -> 上传软件包，选择您下载的软件包进行上传并安装；
 
@@ -146,7 +146,7 @@ wget -O /usr/bin/install.sh https://ghfast.top/https://raw.githubusercontent.com
 >     ```
 >
 > 该参数将使tailscale更积极地回收内存  
-> 更多信息，可查看issues：[关于内存占用](https://github.com/GuNanOvO/openwrt-tailscale/issues/17)
+> 更多信息，可查看issues：[关于内存占用](https://github.com/hoang-rio/openwrt-tailscale/issues/17)
 
 
 ---
@@ -202,7 +202,7 @@ ts_include_cli,ts_omit_aws,ts_omit_bird,ts_omit_completion,ts_omit_kube,ts_omit_
 
 ### 问题反馈  
 
-遇到问题请至 [Issues](https://github.com/GuNanOvO/openwrt-tailscale/issues) 提交，请附上：
+遇到问题请至 [Issues](https://github.com/hoang-rio/openwrt-tailscale/issues) 提交，请附上：
 
 1. 设备架构信息（`uname -m`）
 2. 目标平台架构信息（`opkg print-architecture`）
@@ -221,7 +221,7 @@ ts_include_cli,ts_omit_aws,ts_omit_bird,ts_omit_completion,ts_omit_kube,ts_omit_
 
 **修改github actions 工作流文件**：
 
-* 修改`.github/workflows/build-tailscale.yml`与`.github/workflows/check-version.yml`当中的所有`GuNanOvO/openwrt-tailscale`为你fork项目，通常只需要修改env部分
+* 修改`.github/workflows/build-tailscale.yml`与`.github/workflows/check-version.yml`当中的所有`hoang-rio/openwrt-tailscale`为你fork项目，通常只需要修改env部分
 
 **工作流文件当中使用的SECRETS**：
 
